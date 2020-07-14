@@ -1,0 +1,20 @@
+{
+    "name": "MiniFramework",
+    "description": "Mini Framework PHP MVC",
+    "require": {
+        "php": ">= 7.0"
+    },
+    "authors": [
+        {
+            "name": "Felipe Wesley",
+            "email": "fe.wesleybasso@gmail.com",
+            "homepage": "https://github.com/felipewesley"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/",
+			"MiniFramework\\": "vendor/MiniFramework/"
+        }
+    }
+}

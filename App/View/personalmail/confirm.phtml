@@ -1,0 +1,67 @@
+<br>
+<?php if($this->view->email===true): ?>
+
+	<div class="jumbotron">
+		<h1 class="display-4">Sua mensagem foi enviada com sucesso!</h1>
+		<p class="lead">
+			O e-mail foi encaminhado com sucesso.
+		</p>
+		<hr class="my-4">
+		<a class="btn btn-success btn-lg" href="/home" role="button">Ir para a home</a>
+	</div>
+
+<?php elseif (!$this->view->email): ?>
+
+	<div class="jumbotron">
+		<h1 class="display-4">Algo deu errado!</h1>
+		<p class="lead">
+			Algum dado informado não é válido.
+		</p>
+		<hr class="my-4">
+		<p>Talvez os dados de login informados não estejam corretos. Por favor, tente novamente.</p>
+
+		<p>
+			<a class="btn btn-outline-danger btn-lg" data-toggle="collapse" href="#errorDetails" role="button" aria-expanded="false" aria-controls="errorDetails">
+				Detalhes do erro
+			</a>
+			<button class="btn btn-danger btn-lg" id="back">Voltar</button>
+		</p>
+
+		<div class="collapse" id="errorDetails">
+			<div class="card card-body">
+				<p>
+					<strong> <?= $this->view->email ?> </strong>
+				</p>
+			</div>
+		</div>
+	</div>
+
+<?php else: ?>
+
+	<div class="jumbotron">
+		<h1 class="display-4">Algo deu errado!</h1>
+		<p class="lead">
+			Alguma coisa não funcionou corretamente e isso é tudo o que sabemos.
+		</p>
+		<hr class="my-4">
+		<p>Siga às instruções a seguir ou tente novamente mais tarde.</p>
+
+		<p>
+			<a class="btn btn-outline-danger btn-lg" data-toggle="collapse" href="#errorDetails" role="button" aria-expanded="false" aria-controls="errorDetails">
+				Detalhes do erro
+			</a>
+			<button class="btn btn-danger btn-lg" id="back">Voltar</button>
+		</p>
+
+		<div class="collapse" id="errorDetails">
+			<div class="card card-body">
+				<p>
+					<strong> <?= $this->view->email ?> </strong>
+				</p>
+			</div>
+		</div>
+	</div>
+
+<?php endif; ?>
+
+<script src="<?= $this->view->js ?>"></script>

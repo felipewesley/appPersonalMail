@@ -1,0 +1,55 @@
+<!--link rel="stylesheet" href="<?= $this->view->css ?>"-->
+    
+<div class="container-page">
+
+    <div class="title">
+        <h1 class="title1"> Sobre um framework MVC </h1>
+    </div>
+
+    <div class="content">
+
+        <div class="about-mvc">
+            <p>
+                Proposto na década de 1970, o MVC consiste em um padrão de projeto utilizado em desenvolvimento de software que enfatiza a divisão do projeto em três camadas, Model-View-Controller, as quais assumem diferentes responsabilidades. 
+            </p> <br>
+            
+            <div class="camadas">
+                <div class="mvc-camada model">
+                    <h3> Model </h3>
+                    <p>
+                        A Model (Modelo) é a camada responsável pela 
+                        manipulação dos dados recebidos do banco de 
+                        dados e todas as suas validações. 
+                    </p>
+                </div>
+                <div class="mvc-camada view">
+                    <h3> View </h3>
+                    <p>
+                        A View (Visualização) é a camada que representa 
+                        a interface da aplicação com o usuário.
+                    </p>
+                </div>
+                <div class="mvc-camada controller">
+                    <h3> Controller </h3>
+                    <p>
+                        O Controller (Controlador) é a camada responsável pela
+                        tomada de decisão de qual Model e qual View deverá ser utilizada. 
+                    </p>
+                </div>
+            </div>
+
+            <button type="button" onclick="showMvcArchiteture();" class="btn btn-primary">
+                E na prática, como funciona o MVC?
+            </button>
+
+            <p> 
+                Leia mais sobre a estrutura deste projeto, veja a documentação e desenvolva sua aplicação. 
+                <br><br>
+                <small> Documentação no menu Começando. </small>
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<script src="<?= $this->view->js ?>"></script>

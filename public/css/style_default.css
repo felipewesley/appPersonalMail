@@ -1,0 +1,15 @@
+body {
+    font: 1em;
+}
+
+div#jb-novo-email {
+    padding: 18px 0px;
+}
+
+button#btn-confirm-user {
+    display: flex;
+    position: fixed;
+    float: right;
+    bottom: 25px;
+    right: 25px;
+}
